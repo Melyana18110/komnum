@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tugas-komputasi-numerik">Tugas Komputasi Numerik</a></li>
+            <li><a href="#deret-maclaurin">DERET MACLAURIN</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tugas-komputasi-numerik">Tugas Komputasi Numerik</h1>
+<p>Nama  : Melyana Febrianti</p>
+<p>NIM     : 180411100110</p>
+<p>Mata Kuliah : Komputasi Numerik 4A</p>
+<h2 id="deret-maclaurin">DERET MACLAURIN</h2>
+<p>​       Adalah Suatu fungsi f(x) yang memiliki turunan <img alt="f'(x)" src="https://s0.wp.com/latex.php?latex=f%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f'''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, dan seterusnya yang kontinyu dalam interval <img alt="I" src="https://s0.wp.com/latex.php?latex=I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dengan <img alt="a, x \in I" src="https://s0.wp.com/latex.php?latex=a%2C+x+%5Cin+I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> maka untuk <img alt="x" src="https://s0.wp.com/latex.php?latex=x&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> disekitar <img alt="a" src="https://s0.wp.com/latex.php?latex=a&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> yaitu <img alt="|x -a| &lt; \mathbb{R}" src="https://s0.wp.com/latex.php?latex=%7Cx+-a%7C+%3C+%5Cmathbb%7BR%7D&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f(x)" src="https://s0.wp.com/latex.php?latex=f%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dapat diekspansi kedalam Deret Taylor.</p>
+<p>​       Sebenarnya deret MacLaurin masih berhubungan erat dengan Deret Taylor. Deret MacLaurin merupaan kasus khusus dari deret Taylor yaitu deret taylor dengan fungsi yang di ekspansi di sekitar c=0. Deret MacLaurin disebut juga sebagai <strong>Deret Taylor Baku</strong></p>
+<ul>
+<li>Formula Deret MacLaurin :</li>
+</ul>
+<p><img alt="f(x) = f(0) + \dfrac{x}{1!} f'(0) + \dfrac{x^2}{2!} f''(0) + \ldots + \dfrac{x^n}{n!} f^{(n)}(0) + \ldots + R_n(x)" src="https://s0.wp.com/latex.php?latex=f%28x%29+%3D+f%280%29+%2B+%5Cdfrac%7Bx%7D%7B1%21%7D+f%27%280%29+%2B+%5Cdfrac%7Bx%5E2%7D%7B2%21%7D+f%27%27%280%29+%2B+%5Cldots+%2B+%5Cdfrac%7Bx%5En%7D%7Bn%21%7D+f%5E%7B%28n%29%7D%280%29+%2B+%5Cldots+%2B+R_n%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" /></p>
+<ul>
+<li>atau bisa dinyatakan dengan :</li>
+</ul>
+<p><img alt="= \displaystyle \sum_{n=0}^{\infty} \dfrac{1}{n!} x^n" src="https://s0.wp.com/latex.php?latex=%3D+%5Cdisplaystyle+%5Csum_%7Bn%3D0%7D%5E%7B%5Cinfty%7D+%5Cdfrac%7B1%7D%7Bn%21%7D+x%5En&amp;bg=ffffff&amp;fg=666666&amp;s=0" /></p>
+<p>​ Dalam banyak masalah terapan, pilihan basis yang mudah digunakan adalah bilangan irasional e = 2,718...</p>
+<ul>
+<li>
+<p><strong>SOAL</strong></p>
+<p>tentukan e2xe2x dengan xx = 4 dan ekspansi eror &lt; 0,001.</p>
+<p>f(x) = (e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f(0) = 1</p>
+<p>f'(x) = (2e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f'(0) = 2</p>
+<p>f”(x) = (4e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”(0) = 4</p>
+<p>f”'(x) = (8e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”'(0) = 8</p>
+<p>f””(x) = (16e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f””(0) = 16</p>
+</li>
+<li>
+<p><strong>Program</strong></p>
+</li>
+</ul>
+<pre><code class="python">import math
+
+x=4
+cek =1
+a = 0
+b=1
+iter = 1
+
+while cek&gt;0.001:
+    f_x = 0
+    f_y = 0
+    for i in range(a):
+        f_x += (2**i)*x**i/math.factorial(i)
+
+    for j in range(b):
+        f_y += (2**j)*x**j/math.factorial(j)
+    cek = f_y-f_x
+    a+=1
+    b+=1
+    print(&quot;iterasi ke-&quot;,iter,&quot;= &quot;,cek)
+    iter+=1
+</code></pre>
+
+<pre><code class="python">iterasi ke- 1 =  1.0
+iterasi ke- 2 =  8.0
+iterasi ke- 3 =  32.0
+iterasi ke- 4 =  85.33333333333333
+iterasi ke- 5 =  170.66666666666669
+iterasi ke- 6 =  273.0666666666666
+iterasi ke- 7 =  364.08888888888896
+iterasi ke- 8 =  416.1015873015872
+iterasi ke- 9 =  416.1015873015872
+iterasi ke- 10 =  369.8680776014112
+iterasi ke- 11 =  295.89446208112895
+iterasi ke- 12 =  215.195972422639
+iterasi ke- 13 =  143.46398161509296
+iterasi ke- 14 =  88.28552714774924
+iterasi ke- 15 =  50.448872655856576
+iterasi ke- 16 =  26.90606541645684
+iterasi ke- 17 =  13.45303270822842
+iterasi ke- 18 =  6.330838921519444
+iterasi ke- 19 =  2.8137061873417224
+iterasi ke- 20 =  1.184718394670199
+iterasi ke- 21 =  0.47388735786807956
+iterasi ke- 22 =  0.18052851728316455
+iterasi ke- 23 =  0.06564673355751438
+iterasi ke- 24 =  0.022833646454728296
+iterasi ke- 25 =  0.0076112154847578495
+iterasi ke- 26 =  0.0024355889549951826
+iterasi ke- 27 =  0.0007494119863622473
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2020-03-03 08:55:25
+-->
