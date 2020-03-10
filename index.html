@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tugas-komputasi-numerik">Tugas Komputasi Numerik</a></li>
+            <li><a href="#deret-maclaurin">DERET MACLAURIN</a></li>
+            <li><a href="#program-newton-raphson-pada-fungsi-non-linear">Program Newton Raphson pada Fungsi Non Linear</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="tugas-komputasi-numerik">Tugas Komputasi Numerik</h1>
+<p>Nama  : Melyana Febrianti</p>
+<p>NIM     : 180411100110</p>
+<p>Mata Kuliah : Komputasi Numerik 4A</p>
+<h2 id="deret-maclaurin">DERET MACLAURIN</h2>
+<p>​       Adalah Suatu fungsi f(x) yang memiliki turunan <img alt="f'(x)" src="https://s0.wp.com/latex.php?latex=f%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f'''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, dan seterusnya yang kontinyu dalam interval I dengan a, x \in I maka untuk x disekitar a yaitu <img alt="|x -a| &lt; \mathbb{R}" src="https://s0.wp.com/latex.php?latex=%7Cx+-a%7C+%3C+%5Cmathbb%7BR%7D&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, f(x) dapat diekspansi kedalam Deret Taylor</p>
+<p>​       Sebenarnya deret MacLaurin masih berhubungan erat dengan Deret Taylor. Deret MacLaurin merupaan kasus khusus dari deret Taylor yaitu deret taylor dengan fungsi yang di ekspansi di sekitar c=0. Deret MacLaurin disebut juga sebagai <strong>Deret Taylor Baku</strong></p>
+<ul>
+<li>Formula Deret MacLaurin :</li>
+</ul>
+<p><img alt="f(x) = f(a) + \dfrac{(x-a)}{1!} f'(a) + \dfrac{(x-a)^2}{2!} f''(a) + \ldots + \dfrac{(x-a)^n}{n!} f^{(n)}(a) + \ldots + R_n(x)" src="https://s0.wp.com/latex.php?latex=f%28x%29+%3D+f%28a%29+%2B+%5Cdfrac%7B%28x-a%29%7D%7B1%21%7D+f%27%28a%29+%2B+%5Cdfrac%7B%28x-a%29%5E2%7D%7B2%21%7D+f%27%27%28a%29+%2B+%5Cldots+%2B+%5Cdfrac%7B%28x-a%29%5En%7D%7Bn%21%7D+f%5E%7B%28n%29%7D%28a%29+%2B+%5Cldots+%2B+R_n%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" /></p>
+<p>​ Dalam banyak masalah terapan, pilihan basis yang mudah digunakan adalah bilangan irasional e = 2,718...</p>
+<ul>
+<li>
+<p><strong>SOAL</strong></p>
+<p>tentukan e2x dengan x = 4 dan ekspansi eror &lt; 0,001.</p>
+<p>f(x) = (e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f(0) = 1</p>
+<p>f'(x) = (2e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f'(0) = 2</p>
+<p>f”(x) = (4e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”(0) = 4</p>
+<p>f”'(x) = (8e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f”'(0) = 8</p>
+<p>f””(x) = (16e)^2x <img alt="\rightarrow" src="https://s0.wp.com/latex.php?latex=%5Crightarrow&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> f””(0) = 16</p>
+</li>
+<li>
+<p><strong>Program</strong></p>
+</li>
+</ul>
+<pre><code class="python">import math
+
+x=4
+cek =1
+a = 0
+b=1
+iter = 1
+
+while cek&gt;0.001:
+    f_x = 0
+    f_y = 0
+    for i in range(a):
+        f_x += (2**i)*x**i/math.factorial(i)
+
+    for j in range(b):
+        f_y += (2**j)*x**j/math.factorial(j)
+    cek = f_y-f_x
+    a+=1
+    b+=1
+    print(&quot;iterasi ke-&quot;,iter,&quot;= &quot;,cek)
+    iter+=1
+</code></pre>
+
+<pre><code class="python">iterasi ke- 1 =  1.0
+iterasi ke- 2 =  8.0
+iterasi ke- 3 =  32.0
+iterasi ke- 4 =  85.33333333333333
+iterasi ke- 5 =  170.66666666666669
+iterasi ke- 6 =  273.0666666666666
+iterasi ke- 7 =  364.08888888888896
+iterasi ke- 8 =  416.1015873015872
+iterasi ke- 9 =  416.1015873015872
+iterasi ke- 10 =  369.8680776014112
+iterasi ke- 11 =  295.89446208112895
+iterasi ke- 12 =  215.195972422639
+iterasi ke- 13 =  143.46398161509296
+iterasi ke- 14 =  88.28552714774924
+iterasi ke- 15 =  50.448872655856576
+iterasi ke- 16 =  26.90606541645684
+iterasi ke- 17 =  13.45303270822842
+iterasi ke- 18 =  6.330838921519444
+iterasi ke- 19 =  2.8137061873417224
+iterasi ke- 20 =  1.184718394670199
+iterasi ke- 21 =  0.47388735786807956
+iterasi ke- 22 =  0.18052851728316455
+iterasi ke- 23 =  0.06564673355751438
+iterasi ke- 24 =  0.022833646454728296
+iterasi ke- 25 =  0.0076112154847578495
+iterasi ke- 26 =  0.0024355889549951826
+iterasi ke- 27 =  0.0007494119863622473
+</code></pre>
+
+<h2 id="program-newton-raphson-pada-fungsi-non-linear">Program Newton Raphson pada Fungsi Non Linear</h2>
+<h5 id="newton-raphson"><strong>Newton Raphson</strong></h5>
+<p>​       Adalah metode pencarian akar suatu fungsi <em>f(x)</em> dengan pendekatan satu titik, dimana fungsi <em>f(x)</em> mempunyai turunan. Metode ini dianggap lebih mudah dari <strong>Metode Bagi Dua</strong> (Bisection Method) karena metode ini menggunakan pendekatan satu titik sebagai titik awal. Semakin dekat titik awal yang kita pilih dengan akar sebenarnya, maka semakin cepat konvergen ke akarnya.</p>
+<p>​       Menentukan <em>x0</em> sebagai titik awal, kemudian menarik garis lurus (misal garis ıı ) yang menyinggung titik <em>f(x0)</em> . Hal ini berakibat garis ıı memotong sumbu <em>x</em> di titik <em>x1</em> Setelah itu diulangi langkah sebelumnya tapi sekarang <em>x1</em> dianggap sebagai titik awalnya. Dari mengulang langkah-langkah sebelumnya akan mendapatkan <em>x2,x3,...,xnx2,x3,...,xn</em> dengan <em>xn</em> yang diperoleh adalah bilangan riil yang merupakan akar atau mendekati akar yang sebenarnya.</p>
+<p>persamaan garis <em>ı:y−y0=m(x−x0)</em></p>
+<p><em>y−f(x0)=f′(x0)(x−x0)</em></p>
+<p><em>x1</em> perpotongan garis ıı dengan sumbu - <em>x</em></p>
+<p>0−f(x0)=f′(x0)(x−x0)</p>
+<p><em>y = 0</em> dan <em>x = x1</em> maka koordinat titik (<em>x1</em>,0)</p>
+<p>−f(x0)/f′(x0)=(x1−x0)</p>
+<p>sehingga di dapat sebuah rumus :</p>
+<p>x1=x0−f(x0)/f′(x0),x2=x1−f(x1)/f′(x1),...,xn=xn−1−f(xn−1)/f′(xn−1)</p>
+<p><strong>Menyusun Algoritma dan Pemrograman Newton Rhapson</strong></p>
+<p>​       Dari rumus yang kita dapat diatas kita dapat menyusun sebuah algoritma yang nantinya akan dibuat menjadi sebuah program. Algoritma menyusun akar - akar <em>f(x)=0</em> sebagai berikut :</p>
+<ol>
+<li>Didefinisikan fungsi <em>f</em> dengan <em>f(x)</em> dan <em>f′(x)</em></li>
+<li>Ditentukan Epsilon sebagai Toleransi kesalahan serta iterasi maksimum untuk <em>Stopping Condition</em></li>
+<li>Dipilih tebakan awal <em>x0</em></li>
+<li>Dihitung <em>f(x0)</em> dan <em>f'(x0)</em></li>
+<li>Dihitung <em>xb=x0−f(x0)f′(x0)≠0</em> . jika <em>f′(x0)=0</em> kembali ke langkah - 3</li>
+<li>Jika <em>|xb−x0|&lt;ε</em> . itersasi lebih dari iterasi maksimum tulis <em>xhampiran=xbxhampiran=xb</em> sebagai hasil hampiran akar; jika tidak, lanjutkan ke langkah berikutnya.</li>
+<li>Ganti nilai <em>x0</em> dengan <em>x0=xb</em> dan kembali ke langkah-4</li>
+</ol>
+<p><strong>Program</strong></p>
+<pre><code class="python">import math
+e = 2.71828
+
+def fungsi(x):
+    x = float((e**x) - (4*x))
+    return x
+def fungsiturunan(x):
+    x = float((e**x) - (4))
+    return x
+
+x = float(input('Masukkan nilai awal = '))
+error = float(input('Masukkan nilai error = '))
+perulangan = int(input('Masukkan maksimal pengulangan = '))
+
+iterasi = 0
+selisih = error+1
+while iterasi &lt;= perulangan  and selisih&gt;error :
+    iterasi += 1
+    f_2 = x - (fungsi(x)/fungsiturunan(x))
+    selisih = math.fabs(f_2 - x)
+    x = f_2
+    print(&quot;Iterasi ke&quot;,iterasi,&quot;x = &quot;,f_2, &quot;, f(&quot;,f_2,&quot;) = &quot;,fungsi(f_2),&quot;, selisih = &quot;,error)
+    if iterasi &lt;= perulangan:
+        print(&quot;Perulangan Mencapai Batas Maksimal dengan hasil = &quot;, f_2)
+    else :
+        print(&quot;Toleransi tidak terpenuhi&quot;)
+</code></pre>
+
+<pre><code class="python">Masukkan nilai awal = 0
+Masukkan nilai error = 0.0001
+Masukkan maksimal pengulangan = 10
+Iterasi ke 1 x =  0.3333333333333333 , f( 0.3333333333333333 ) =  0.06227877883196098 , selisih =  0.0001
+Perulangan Mencapai Batas Maksimal dengan hasil =  0.3333333333333333
+Iterasi ke 2 x =  0.35724635301940616 , f( 0.35724635301940616 ) =  0.0004022049593612742 , selisih =  0.0001
+Perulangan Mencapai Batas Maksimal dengan hasil =  0.35724635301940616
+Iterasi ke 3 x =  0.35740281572145605 , f( 0.35740281572145605 ) =  1.734656973617632e-08 , selisih =  0.0001
+Perulangan Mencapai Batas Maksimal dengan hasil =  0.35740281572145605
+Iterasi ke 4 x =  0.3574028224700733 , f( 0.3574028224700733 ) =  -6.439293542825908e-15 , selisih =  0.0001
+Perulangan Mencapai Batas Maksimal dengan hasil =  0.3574028224700733
+</code></pre>
+
+<p><strong>Penjelasan dari program diatas</strong></p>
+<ol>
+<li>Importh Library math</li>
+<li>karena kita menggunakan contoh fungsi <em>f(x)=ex−4X</em> maka kita membuat sebuah fungsi yang sesuai , dan juga fungsi turunannya yaitu <em>f′(x)=ex−4</em></li>
+<li>Membuat sebuah inputan untuk X , Error / Epsilon , serta Maksimal perulangan untuk stopping condition</li>
+<li>lalu deklarasikan iterasi = 0 untuk perulangan yang ke 0 nantinya dan akan ditambah setiap kali perulangan</li>
+<li>deklarasikan selisih untuk <em>xb−x0</em> untuk perbandingan</li>
+<li>lakukan perulangan dengan kondisi iterasi kurang dari sama dengan inputan maksimal iterasi dan selisih lebih dari error / epsilon</li>
+<li>hitung <em>xb</em> dengan rumus yang sudah kita dapatkan sebelumnya</li>
+<li>lalu lakukan perbandingan jika mencapai nilai <em>True</em> maka toleransi tidak terpenuhi namun perulangan sudah mencapai batas</li>
+<li>jika pengecekan selisih &gt; error bernilai bernilai <em>True</em> maka toleransi akan terpenuhi dengan nilai error serta fungsi x pada iterasi ke n</li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2020-03-10 15:49:22
+-->
